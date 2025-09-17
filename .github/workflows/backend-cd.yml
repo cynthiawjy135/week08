@@ -6,15 +6,15 @@ on:
       aks_cluster_name:
         description: 'Name of the AKS Cluster to deploy to'
         required: true
-        default: 'taskweek8aks'
+        default: '<aks_cluster_name>'
       aks_resource_group:
         description: 'Resource Group of the AKS Cluster'
         required: true
-        default: 'sit722devops-rgw8'
+        default: '<resource_group_name>'
       aks_acr_name:
         description: 'Name of ACR'
         required: true
-        default: 'taskweek8acr'
+        default: '<acr_name>'
 
 jobs:
   deploy_backend:
